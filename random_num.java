@@ -15,7 +15,7 @@ public class random_num {
 
         //Calculate 7 numbers 1-35 
         for(int i = 0; i < 7; i++) {
-            random = randomGen.nextInt(35-1) + 1;
+            random = randomGen.nextInt(35) + 1;
             if (!numbers.contains(random)){
                 numbers.add(random);
             }
@@ -25,7 +25,7 @@ public class random_num {
         };
 
         //Calculate Powerball 
-        random = randomGen.nextInt(20-1) + 1;
+        random = randomGen.nextInt(20) + 1;
         numbers.add(random);
 
         return numbers;
